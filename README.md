@@ -1,6 +1,6 @@
 # OpenAI Boilerplate Project
 
-Boilerplate for working with the OpenAI GPT API.
+Boilerplate for working with the OpenAI API.
 
 ## Structure
 

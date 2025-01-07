@@ -3,6 +3,11 @@ from openai import OpenAI, OpenAIError
 
 def call_GPT(messages: list,
              model: str) -> None:
+    """
+    Call the OpenAI API to query the model. Print the response content.
+
+    :param messages: input message in the OpenAI API format.
+    """
 
     # define OpenAI instance
     openai = OpenAI()

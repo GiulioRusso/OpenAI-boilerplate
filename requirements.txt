@@ -1,1 +1,2 @@
-openai
+python-dotenv>=1.0.1
+openai>=1.59.3
