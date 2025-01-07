@@ -6,22 +6,22 @@ Boilerplate for working with the OpenAI API.
 
 ```
 OpenAI-boilerplate/
-├── main.py                # Main script to run the project
 ├── prompts/               # Folder containing prompt text files
 │   ├── system_prompt.txt  # System prompt content
 │   ├── user_prompt.txt    # User prompt content
 ├── utility/               # Utility scripts
 │   ├── build_messages.py  # Builds messages for the OpenAI API
-│   ├── check_key.py       # Validates the API key
 │   ├── call_GPT.py        # Handles API calls to OpenAI
-│   ├── indent_prompt.py   # Formats text with indentation
+│   ├── check_key.py       # Validates the API key
 │   ├── debug_print.py     # Prints debug information
-│   ├── read_file.py       # Reads content from text files
+│   ├── indent_prompt.py   # Formats text with indentation
 │   ├── load_key.py        # Loads the API key from .env
-├── requirements.txt       # List of dependencies
-├── .gitignore             # Git ignore file
+│   ├── read_file.py       # Reads content from text files
 ├── .env                   # Environment file (API key)
+├── .gitignore             # Git ignore file
+├── main.py                # Main script to run the project
 ├── README.md              # Project documentation
+├── requirements.txt       # List of dependencies
 ```
 
 ## Prerequisites
