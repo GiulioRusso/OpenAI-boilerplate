@@ -1,4 +1,4 @@
-# OpenAI Boilerplate Project
+# 🟢 OpenAI Boilerplate Project
 
 Boilerplate for working with the OpenAI API.
 
