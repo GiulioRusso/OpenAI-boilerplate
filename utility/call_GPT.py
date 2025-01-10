@@ -1,4 +1,5 @@
 from openai import OpenAI, OpenAIError
+from IPython.display import Markdown, display, update_display
 
 
 def call_GPT(messages: list,
@@ -15,13 +16,15 @@ def call_GPT(messages: list,
     try:
         # call GPT
         response = openai.chat.completions.create(model=model,
-                                                messages=messages)
+                                                messages=messages,
+                                                stream=True)
         
         # print GPT response
-        gpt_response = response.choices[0].message.content.strip()
-        
         print("\n\t>>> GPT Response: ")
-        print(gpt_response)
+
+        for chunk in response:
+            content = chunk.choices[0].delta.content or ''
+            print(content, end='', flush=True)  # print each chunk as it arrives
 
     except OpenAIError as e:
 
