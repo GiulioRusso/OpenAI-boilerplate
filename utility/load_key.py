@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from utility.check_key import check_key
 
 
-def load_key() -> None:
+def load_key(debug: bool = False) -> None:
     """
     Loads the OpenAI API key from the .env file.
     """
@@ -14,4 +14,5 @@ def load_key() -> None:
     api_key = os.getenv('OPENAI_API_KEY')
 
     # check API key
-    check_key(api_key=api_key)
+    check_key(api_key=api_key,
+              debug=debug)
