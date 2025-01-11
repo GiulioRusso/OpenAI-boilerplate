@@ -58,6 +58,16 @@ python3 main.py
 --model gpt-4o-mini
 ```
 
+or
+
+```bash
+python3 main.py
+--sp ./prompts/system_prompt.txt
+--m gpt-4o-mini
+```
+
+
+
 ## Troubleshooting
 - **No API Key Found**: Ensure your `.env` file is correctly set up with the `OPENAI_API_KEY` variable.
 - **File Not Found Errors**: Verify that the paths to a system prompt (e.g., `system_prompt.txt`) is correct.

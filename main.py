@@ -28,9 +28,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run GPT-4 with specified prompts and model.")
     
     # define command-line arguments
-    parser.add_argument('--system_prompt', type=str, required=True, 
+    parser.add_argument('--system_prompt', '--sp', type=str, required=True, 
                         help="Path to the system prompt text file.")
-    parser.add_argument('--model', type=str, required=True, 
+    parser.add_argument('--model', '--m', type=str, required=True, 
                         help="The model string to use (e.g., 'gpt-4o-mini').")
     
     # parse the arguments
