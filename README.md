@@ -1,8 +1,7 @@
 # 🟢 OpenAI Boilerplate Project
 
 Boilerplate for working with the OpenAI API.
-
-<br><img src="output/example.png"><br>
+<br><img src="output/example.png">
 
 ## Structure
 
