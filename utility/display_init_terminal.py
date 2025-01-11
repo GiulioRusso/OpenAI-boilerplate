@@ -13,8 +13,8 @@ def display_init_terminal():
             print(content)
         
     except FileNotFoundError:
-        print(f">>> ERROR: The init file {file_path} does not exist.")
+        print(f"!!! ERROR: The init file {file_path} does not exist.")
         sys.exit(1)
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"!!! ERROR: An error occurred: {e}")
         sys.exit(1)

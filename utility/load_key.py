@@ -7,6 +7,8 @@ from utility.check_key import check_key
 def load_key(debug: bool = False) -> None:
     """
     Loads the OpenAI API key from the .env file.
+
+    :param debug: Debug flag.
     """
 
     # load key from .env file

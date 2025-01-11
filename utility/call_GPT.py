@@ -34,4 +34,4 @@ def call_GPT(messages: list,
 
     except OpenAIError as e:
 
-        print(f"\n\t!!! ERROR: {e.__dict__.get('body')['message']}")
+        print(f"!!! ERROR: {e.__dict__.get('body')['message']}")

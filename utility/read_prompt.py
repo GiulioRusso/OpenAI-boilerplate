@@ -12,6 +12,6 @@ def read_prompt(file_path: str) -> str:
             content = file.read()
         return content
     except FileNotFoundError:
-        raise FileNotFoundError(f"\n\t>>> ERROR: The file at {file_path} was not found.")
+        raise FileNotFoundError(f"!!! ERROR: The file at {file_path} was not found.")
     except IOError as e:
-        raise IOError(f"\n\t>>> ERROR: An error occurred while reading the file: {e}")
+        raise IOError(f"!!! ERROR: An error occurred while reading the file: {e}")

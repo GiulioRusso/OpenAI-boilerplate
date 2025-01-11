@@ -6,7 +6,7 @@ def check_key(api_key: str,
     Checks the validity of the API key.
 
     :param api_key: The API key to validate.
-    :param debug: Debug flat.
+    :param debug: Debug flag.
     """
 
     if not api_key:
